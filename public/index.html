@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="TiendaPlus - tienda online" />
+
+    <title>TiendaPlus</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- =====================================================
+     HEADER
+====================================================== -->
+
+    <header>
+      <div class="header-inner">
+        <a href="#inicio" class="logo">
+          <span class="logo-icon">
+            <i data-lucide="shopping-bag"></i>
+          </span>
+
+          <span> Tienda<span>Plus</span> </span>
+        </a>
+
+        <nav>
+          <a href="#inicio"> Inicio </a>
+
+          <a href="#categorias"> Categorías </a>
+
+          <a href="#productos"> Productos </a>
+
+          <a href="#sobre-mi"> Sobre mí </a>
+
+          <a href="#contacto"> Contacto </a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="theme-btn" class="icon-button" type="button">
+            <i data-lucide="moon"></i>
+          </button>
+
+          <button id="search-btn" class="icon-button" type="button">
+            <i data-lucide="search"></i>
+          </button>
+
+          <button
+            id="cart-btn"
+            class="icon-button counter-button"
+            type="button"
+          >
+            <i data-lucide="shopping-bag"></i>
+
+            <span id="cart-count"> 0 </span>
+          </button>
+
+          <button id="menu-btn" class="icon-button mobile-only" type="button">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MENÚ MÓVIL -->
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#inicio"> Inicio </a>
+
+        <a href="#categorias"> Categorías </a>
+
+        <a href="#productos"> Productos </a>
+
+        <a href="#sobre-mi"> Sobre mí </a>
+
+        <a href="#contacto"> Contacto </a>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     BUSCADOR
+====================================================== -->
+
+    <div id="search-panel" class="search-panel">
+      <div class="search-box">
+        <i data-lucide="search"></i>
+
+        <input
+          id="search-input"
+          type="search"
+          placeholder="¿Qué estás buscando?"
+        />
+
+        <button id="search-close" class="icon-button" type="button">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- =====================================================
+     HERO
+====================================================== -->
+
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <span class="badge"> ✨ BIENVENIDO </span>
+
+        <h1>
+          Todo lo que buscás,
+
+          <span> en un solo lugar. </span>
+        </h1>
+
+        <p>Encontrá productos para vos, tu hogar y toda la familia.</p>
+
+        <div class="hero-buttons">
+          <a href="#productos" class="primary-button">
+            Ver productos
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a href="#categorias" class="secondary-button">
+            Explorar categorías
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-card">
+          <div>
+            <small> SELECCIÓN ESPECIAL </small>
+
+            <strong> Productos para todos </strong>
+
+            <span> Calidad · Variedad · Atención </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     BENEFICIOS
+====================================================== -->
+
+    <section class="benefits">
+      <div class="benefit">
+        <i data-lucide="truck"></i>
+
+        <div>
+          <strong> Envíos </strong>
+
+          <span> Coordinamos tu entrega </span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <i data-lucide="shield-check"></i>
+
+        <div>
+          <strong> Compra segura </strong>
+
+          <span> Mercado Pago </span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <i data-lucide="message-circle"></i>
+
+        <div>
+          <strong> Atención </strong>
+
+          <span> Consultas y pedidos </span>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <i data-lucide="heart"></i>
+
+        <div>
+          <strong> Productos favoritos </strong>
+
+          <span> Guardá lo que te gusta </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CATEGORÍAS
+====================================================== -->
+
+    <section id="categorias" class="section">
+      <div class="section-header">
+        <div>
+          <span class="section-label"> EXPLORÁ </span>
+
+          <h2>Categorías</h2>
+        </div>
+
+        <p>Elegí una categoría para ver sus productos.</p>
+      </div>
+
+      <div class="categories">
+        <!-- =================================================
+             REMERAS Y CAMISAS
+        ================================================== -->
+
+        <button
+          class="category-card"
+          data-category="Remeras y camisas"
+          type="button"
+        >
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/remera1.jpg"
+              alt="Remeras y camisas"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/remera5.jpg"
+              alt="Remeras y camisas"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/remera2.jpg"
+              alt="Remeras y camisas"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/camisa3.jpg"
+              alt="Remeras y camisas"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/camisa4.jpg"
+              alt="Remeras y camisas"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Remeras y camisas </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             PANTALONES Y SHORTS
+        ================================================== -->
+
+        <button
+          class="category-card"
+          data-category="Pantalones y Shorts"
+          type="button"
+        >
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/pantalon1.jpg"
+              alt="Pantalones y Shorts"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/pantalon2.jpg"
+              alt="Pantalones y Shorts"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/short3.jpg"
+              alt="Pantalones y Shorts"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/short4.jpg"
+              alt="Pantalones y Shorts"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/short5.jpg"
+              alt="Pantalones y Shorts"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Pantalones y Shorts </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             ACCESORIOS
+        ================================================== -->
+
+        <button class="category-card" data-category="Accesorios" type="button">
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/pulseras1.jpg"
+              alt="Accesorios"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/pulseras2.jpg"
+              alt="Accesorios"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/pulseras3.jpg"
+              alt="Accesorios"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/collar4.jpg"
+              alt="Accesorios"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/collar5.jpg"
+              alt="Accesorios"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Accesorios </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             BOLSOS DE MANO
+        ================================================== -->
+
+        <button
+          class="category-card"
+          data-category="Bolsos de mano"
+          type="button"
+        >
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/bolso1.jpg"
+              alt="Bolsos de mano"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/bolso2.jpg"
+              alt="Bolsos de mano"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/bolso3.jpg"
+              alt="Bolsos de mano"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/bolso4.jpg"
+              alt="Bolsos de mano"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/bolso5.jpg"
+              alt="Bolsos de mano"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Bolsos de mano </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             LENTES
+        ================================================== -->
+
+        <button class="category-card" data-category="Lentes" type="button">
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/lentes1.jpg"
+              alt="Lentes"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/lentes2.jpg"
+              alt="Lentes"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/lentes3.jpg"
+              alt="Lentes"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/lentes4.jpg"
+              alt="Lentes"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/lentes5.jpg"
+              alt="Lentes"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Lentes </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             VASOS
+        ================================================== -->
+
+        <button class="category-card" data-category="Vasos" type="button">
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/vasos1.jpg"
+              alt="Vasos"
+            />
+
+            <img class="category-slide" src="imagenes/vasos2.jpg" alt="Vasos" />
+
+            <img class="category-slide" src="imagenes/vasos3.jpg" alt="Vasos" />
+
+            <img class="category-slide" src="imagenes/vasos4.jpg" alt="Vasos" />
+
+            <img class="category-slide" src="imagenes/vasos5.jpg" alt="Vasos" />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Vasos </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             ANILLOS
+        ================================================== -->
+
+        <button class="category-card" data-category="Anillos" type="button">
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/anillos.jpg"
+              alt="Anillos"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/anillos2.jpg"
+              alt="Anillos"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/anillos3.jpg"
+              alt="Anillos"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/anillos4.jpg"
+              alt="Anillos"
+            />
+
+            <img
+              class="category-slide"
+              src="imagenes/anillos5.jpg"
+              alt="Anillos"
+            />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Anillos </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+
+        <!-- =================================================
+             BUZOS - NUEVA CATEGORÍA
+        ================================================== -->
+
+        <button class="category-card" data-category="Buzos" type="button">
+          <div class="category-image" data-category-carousel>
+            <img
+              class="category-slide active"
+              src="imagenes/buzo1.jpg"
+              alt="Buzos"
+            />
+
+            <img class="category-slide" src="imagenes/buzo2.jpg" alt="Buzos" />
+
+            <img class="category-slide" src="imagenes/buzo3.jpg" alt="Buzos" />
+
+            <img class="category-slide" src="imagenes/buzo4.jpg" alt="Buzos" />
+
+            <img class="category-slide" src="imagenes/buzo5.jpg" alt="Buzos" />
+
+            <span class="category-prev" aria-label="Imagen anterior"> ‹ </span>
+
+            <span class="category-next" aria-label="Imagen siguiente"> › </span>
+          </div>
+
+          <div class="category-content">
+            <strong> Buzos </strong>
+
+            <span> Ver productos </span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     PRODUCTOS
+====================================================== -->
+
+    <section id="productos" class="section">
+      <div class="section-header">
+        <div>
+          <span class="section-label"> TIENDA </span>
+
+          <h2>Productos</h2>
+        </div>
+
+        <span id="product-result" class="results"> Cargando... </span>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="Todos" type="button">
+          Todos
+        </button>
+
+        <button class="filter" data-filter="Remeras y camisas" type="button">
+          Remeras y camisas
+        </button>
+
+        <button class="filter" data-filter="Pantalones y Shorts" type="button">
+          Pantalones y Shorts
+        </button>
+
+        <button class="filter" data-filter="Accesorios" type="button">
+          Accesorios
+        </button>
+
+        <button class="filter" data-filter="Bolsos de mano" type="button">
+          Bolsos de mano
+        </button>
+
+        <button class="filter" data-filter="Lentes" type="button">
+          Lentes
+        </button>
+
+        <button class="filter" data-filter="Vasos" type="button">Vasos</button>
+
+        <button class="filter" data-filter="Anillos" type="button">
+          Anillos
+        </button>
+      </div>
+
+      <div id="products-grid" class="products-grid"></div>
+
+      <div id="no-products" class="empty-products">
+        <i data-lucide="search-x"></i>
+
+        <h3>No encontramos productos</h3>
+
+        <p>Probá con otra búsqueda.</p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SOBRE MI
+====================================================== -->
+
+    <section id="sobre-mi" class="about">
+      <div class="about-image">
+        <img src="imagenes/video2.gif" alt="TiendaPlus" />
+      </div>
+
+      <div class="about-text">
+        <span class="section-label"> SOBRE MÍ </span>
+
+        <h2>Una tienda pensada para crecer.</h2>
+
+        <p>
+          Este espacio está pensado para ofrecer productos de una manera simple,
+          moderna y cercana.
+        </p>
+
+        <p>
+          La idea es que puedas encontrar lo que necesitás y realizar tu compra
+          fácilmente.
+        </p>
+
+        <div class="checks">
+          <span> ✓ Atención personalizada </span>
+
+          <span> ✓ Compra segura </span>
+
+          <span> ✓ Productos seleccionados </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CONTACTO
+====================================================== -->
+
+    <section id="contacto" class="contact">
+      <div>
+        <span class="section-label"> CONTACTO </span>
+
+        <h2>¿Necesitás ayuda?</h2>
+
+        <p>Estamos para responder tus consultas.</p>
+      </div>
+
+      <div class="contact-actions">
+        <a
+          href="https://wa.me/+5493512289323"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp"
+        >
+          <i data-lucide="message-circle"></i>
+
+          WhatsApp
+        </a>
+
+        <a href="mailto:damian.conci.9@gmail.com" class="secondary-button">
+          <i data-lucide="mail"></i>
+
+          Email
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     MODAL PRODUCTO
+====================================================== -->
+
+    <div id="product-modal" class="modal hidden">
+      <div class="modal-card">
+        <button id="modal-close" class="modal-close" type="button">×</button>
+
+        <div id="modal-content" class="modal-grid"></div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+     CHECKOUT
+====================================================== -->
+
+    <div id="checkout-modal" class="modal hidden">
+      <div class="checkout-card">
+        <button id="checkout-close" class="modal-close" type="button">×</button>
+
+        <span class="section-label"> FINALIZAR COMPRA </span>
+
+        <h2>Datos de entrega</h2>
+
+        <form id="checkout-form">
+          <input
+            id="customer-name"
+            type="text"
+            placeholder="Nombre completo"
+            required
+          />
+
+          <input
+            id="customer-email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            id="customer-phone"
+            type="tel"
+            placeholder="Teléfono"
+            required
+          />
+
+          <input
+            id="customer-address"
+            type="text"
+            placeholder="Dirección"
+            required
+          />
+
+          <input id="customer-city" type="text" placeholder="Ciudad" required />
+
+          <div id="checkout-summary" class="checkout-summary"></div>
+
+          <button class="primary-button full" type="submit">
+            <i data-lucide="credit-card"></i>
+
+            Continuar al pago
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- =====================================================
+     CARRITO
+====================================================== -->
+
+    <div id="cart-overlay" class="drawer-overlay"></div>
+
+    <aside id="cart-panel" class="cart-panel">
+      <div class="drawer-header">
+        <div>
+          <span class="section-label"> TU COMPRA </span>
+
+          <h2>Carrito</h2>
+        </div>
+
+        <button id="cart-close" class="icon-button" type="button">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="total-row">
+          <span> Total </span>
+
+          <strong id="cart-total"> $0 </strong>
+        </div>
+
+        <button id="checkout-btn" class="primary-button full" type="button">
+          Comprar
+
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- =====================================================
+     TOAST
+====================================================== -->
+
+    <div id="toast"></div>
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <a href="#inicio" class="logo">
+            <span class="logo-icon">
+              <i data-lucide="shopping-bag"></i>
+            </span>
+
+            <span> Tienda<span>Plus</span> </span>
+          </a>
+
+          <p>Tu tienda personal online.</p>
+        </div>
+
+        <div>
+          <h4>Navegación</h4>
+
+          <a href="#inicio"> Inicio </a>
+
+          <a href="#categorias"> Categorías </a>
+
+          <a href="#productos"> Productos </a>
+
+          <a href="#contacto"> Contacto </a>
+        </div>
+
+        <div>
+          <h4>Compra</h4>
+
+          <span> Compra segura </span>
+
+          <span> Mercado Pago </span>
+
+          <span> Atención personalizada </span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 TiendaPlus</div>
+    </footer>
+
+    <script src="carrousel.js?v=999"></script>
+  </body>
+</html>
